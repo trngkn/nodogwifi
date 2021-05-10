@@ -6,8 +6,8 @@ opkg update
 opkg install nodogsplash
 
 wget --no-check-certificate https://bizfly-wifi.ss-hn-1.bizflycloud.vn/TP-Link/config/firewall
-wget --no-check-certificate https://bizfly-wifi.ss-hn-1.bizflycloud.vn/TP-Link/config/network
-wget --no-check-certificate https://bizfly-wifi.ss-hn-1.bizflycloud.vn/TP-Link/config/login.sh
+wget --no-check-certificate https://raw.githubusercontent.com/trngkn/nodogwifi/main/network
+wget --no-check-certificate https://raw.githubusercontent.com/trngkn/nodogwifi/main/login.sh
 wget --no-check-certificate https://bizfly-wifi.ss-hn-1.bizflycloud.vn/TP-Link/config/nodogsplash
 wget --no-check-certificate https://bizfly-wifi.ss-hn-1.bizflycloud.vn/TP-Link/config/wireless
 sed -i "s/id123123/$router_id/g" login.sh
