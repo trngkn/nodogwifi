@@ -1,8 +1,7 @@
 #!/bin/sh
 
 read -p "Nhap router_id: " router_id
-opkg update
-# opkg install libustream-openssl
+opkg install libustream-openssl
 opkg install nodogsplash
 
 wget --no-check-certificate https://bizfly-wifi.ss-hn-1.bizflycloud.vn/TP-Link/config/firewall
