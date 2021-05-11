@@ -11,7 +11,7 @@ config wifi-iface 'default_radio0'
 	option mode 'ap'
 	option encryption 'none'
 	option ssid 'Marketing Wifi'
-	option network 'lan wifibiz'
+	option network 'lan'
 	option disabled '1'
 
 config wifi-device 'radio1'
