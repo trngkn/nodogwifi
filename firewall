@@ -124,17 +124,6 @@ config rule
 config include
 	option path '/etc/firewall.user'
 
-config zone
-	option name 'wifibiz'
-	option input 'ACCEPT'
-	option output 'ACCEPT'
-	option forward 'ACCEPT'
-	option network 'wifibiz'
-
-config forwarding
-	option src 'wifibiz'
-	option dest 'wan'
-
 config include 'nodogsplash'
 	option type 'script'
 	option path '/usr/lib/nodogsplash/restart.sh'
