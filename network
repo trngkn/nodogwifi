@@ -38,6 +38,3 @@ config switch_vlan
         option vlan '2'
         option ports '0 5t'
 
-config interface 'wifibiz'
-	option type 'bridge'
-	option proto 'none'
