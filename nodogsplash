@@ -14,7 +14,7 @@ config nodogsplash
   # 1. A simple static splash page (splash.html) with template variables and click to continue (enabled by default)
   # 2. A simple login page requiring username and email address to be entered. (enabled by uncommenting the following line)
 
-  #option preauth '/usr/lib/nodogsplash/login.sh'
+  option preauth '/usr/lib/nodogsplash/login.sh'
 
   # Both modes may be customised or a full custom system can be developed using FAS and BinAuth
   # See documentation at: https://nodogsplashdocs.readthedocs.io/
@@ -31,7 +31,7 @@ config nodogsplash
 
   # Use this option to set the device nodogsplash will bind to.
   # The value may be an interface section in /etc/config/network or a device name such as br-lan.
-  #option gatewayinterface 'br-lan'
+  option gatewayinterface 'br-lan'
 
   # GatewayPort
   # Default: 2050
