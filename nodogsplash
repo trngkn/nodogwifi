@@ -31,7 +31,7 @@ config nodogsplash
 
   # Use this option to set the device nodogsplash will bind to.
   # The value may be an interface section in /etc/config/network or a device name such as br-lan.
-  option gatewayinterface 'br-lan'
+  #option gatewayinterface 'br-lan'
 
   # GatewayPort
   # Default: 2050
