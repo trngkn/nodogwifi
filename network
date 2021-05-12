@@ -21,24 +21,29 @@ config interface 'wan'
 
 config device 'wan_eth0_2_dev'
 	option name 'eth0.2'
-	option macaddr '1c:3b:f3:50:05:85'
+	option macaddr '50:d4:f7:ef:29:11'
 
 config interface 'wan6'
 	option ifname 'eth0.2'
 	option proto 'dhcpv6'
 
 config switch
-	option name 'switch0'
-	option reset '1'
-	option enable_vlan '1'
+        option name 'switch0'
+        option reset '1'
+        option enable_vlan '0'
+
+config switch
+        option name 'switch1'
+        option reset '1'
+        option enable_vlan '1'
 
 config switch_vlan
-	option device 'switch0'
-	option vlan '1'
-	option ports '2 3 4 5 0t'
+        option device 'switch1'
+        option vlan '1'
+        option ports '0 1 2 3 7t'
 
 config switch_vlan
-	option device 'switch0'
-	option vlan '2'
-	option ports '1 0t'
+        option device 'switch1'
+        option vlan '2'
+        option ports '4 7t'
 
