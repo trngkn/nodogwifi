@@ -13,7 +13,7 @@ sed -i "s/id123123/$router_id/g" login.sh
 chmod +x login.sh
 
 cp -v network firewall nodogsplash wireless /etc/config/
-cp  -v login.sh /usr/lib/nodogsplash/
+cp -v login.sh /usr/lib/nodogsplash/
 /etc/init.d/nodogsplash restart
 
 echo "SUCCESS!"
