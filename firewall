@@ -127,10 +127,10 @@ config include
 
 config zone
 	option name 		wifibiz
+	list network 		'wifibiz'
 	option input 		ACCEPT
 	option output 		ACCEPT
 	option forward 		ACCEPT
-	option network 		wifibiz
 
 config forwarding
 	option src 		wifibiz
